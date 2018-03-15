@@ -115,3 +115,14 @@
 
 
 `
+11. 创建一个 <input> 同时设定 type 。微软规定 <input> 的 type 只能写一次。
+
+
+`
+// 在 IE 中无效:
+$("<input>").attr("type", "checkbox");
+// 在 IE 中有效:
+$("<input type='checkbox'>");
+	
+
+`
